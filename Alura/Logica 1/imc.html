@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+
+<script>
+
+var pulaLinha = function() {
+	document.write("<hr>");
+};
+
+// esta função joga a frase e pula uma linha
+var mostra = function(frase) {
+	document.write(frase);
+	pulaLinha();
+};
+
+var calculaIMC = function(altura, peso) {
+	var imc = peso / (altura * altura);
+	return imc;
+};
+
+var pesoDoPrimo = 52;
+var alturaDoPrimo = 1.52;
+var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
+
+mostra("O imc do meu primo é: " + imcDoPrimo);
+mostra("Ele ainda está " + (imcDoPrimo - 18.5) + " pontos acima do limite da magreza.");
+
+if(imcDoPrimo > 18.5 && imcDoPrimo < 35) {
+        mostra("OK! Seu IMC está entre os dois limites.");
+    }
+
+
+var peso = 92;
+var altura = 1.92;
+var imc = calculaIMC(altura, peso);
+
+mostra("Meu imc é: " + imc);
+mostra("Ainda estou " + (imc - 18.5) + " pontos acima do limite da magreza.");
+
+
+
+
+</script>

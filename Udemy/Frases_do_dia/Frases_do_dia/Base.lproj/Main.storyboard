@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Frases_do_dia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="lda-Ct-uDK">
+                                <rect key="frame" x="59" y="20" width="202" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="BNE-gz-0QC"/>
+                                    <constraint firstAttribute="width" constant="202" id="zs1-v9-RIm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="J7z-cW-3PP">
+                                <rect key="frame" x="204" y="496" width="100" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="hNQ-If-ZH6"/>
+                                    <constraint firstAttribute="width" constant="100" id="hsB-TD-YNK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycg-pn-g7b">
+                                <rect key="frame" x="16" y="372" width="288" height="116"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda" translatesAutoresizingMaskIntoConstraints="NO" id="KUH-bj-0Cu">
+                                <rect key="frame" x="16" y="312" width="100" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5fa-7h-J86"/>
+                                    <constraint firstAttribute="height" constant="52" id="Vvg-Xr-j3o"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdA-s7-bY3">
+                                <rect key="frame" x="100" y="202" width="120" height="60"/>
+                                <color key="backgroundColor" red="0.32956972718238831" green="0.52642321586608887" blue="0.098752595484256744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="exx-Rh-Krv"/>
+                                    <constraint firstAttribute="width" constant="120" id="wh1-KL-BrK"/>
+                                </constraints>
+                                <state key="normal" title="Nova frase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="phraseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U41-Yy-b5C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ycg-pn-g7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5Mm-pj-pEf"/>
+                            <constraint firstItem="lda-Ct-uDK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lvg-Gq-6ej"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ycg-pn-g7b" secondAttribute="trailing" constant="16" id="Oji-0m-Xwy"/>
+                            <constraint firstItem="J7z-cW-3PP" firstAttribute="top" secondItem="ycg-pn-g7b" secondAttribute="bottom" constant="8" id="QaK-1x-b7s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J7z-cW-3PP" secondAttribute="trailing" constant="16" id="Wsm-cS-tlM"/>
+                            <constraint firstItem="KUH-bj-0Cu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YXG-9b-1y6"/>
+                            <constraint firstItem="ycg-pn-g7b" firstAttribute="top" secondItem="KUH-bj-0Cu" secondAttribute="bottom" constant="8" id="Zto-MM-bF4"/>
+                            <constraint firstItem="OdA-s7-bY3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="awe-pr-qHk"/>
+                            <constraint firstItem="OdA-s7-bY3" firstAttribute="top" secondItem="lda-Ct-uDK" secondAttribute="bottom" constant="70" id="eaw-Ix-tJf"/>
+                            <constraint firstItem="lda-Ct-uDK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lpz-p0-58v"/>
+                            <constraint firstItem="KUH-bj-0Cu" firstAttribute="top" secondItem="OdA-s7-bY3" secondAttribute="bottom" constant="50" id="oLZ-ii-Z21"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J7z-cW-3PP" secondAttribute="bottom" constant="20" id="qIK-H3-LFe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="phraseLabel" destination="ycg-pn-g7b" id="91I-UI-CFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.125" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita" width="56" height="55"/>
+        <image name="aspas-esquerda" width="57" height="54"/>
+        <image name="logo" width="253" height="140"/>
+    </resources>
+</document>

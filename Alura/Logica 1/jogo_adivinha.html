@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script>
+
+var pulaLinha = function() {
+	document.write("<hr>");
+};
+
+// esta função joga a frase e pula uma linha
+var mostra = function(frase) {
+	document.write(frase);
+	pulaLinha();
+};
+
+var numeroPensadoComCasasDecimais = Math.random() * 100;
+
+var numeroPensado = Math.round(numeroPensadoComCasasDecimais);
+
+var chute = prompt("Já pensei. Qual você acha que é?");
+if(chute == numeroPensado) {
+	mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado)
+}
+else {
+	mostra("Você errou! Eu tinha pensado no " + numeroPensado)
+}
+
+
+</script>

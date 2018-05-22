@@ -1,0 +1,76 @@
+class Data{
+	int dia;
+	int mes;
+	int ano;
+
+	void preencheData (int dia, int mes, int ano) {
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
+	}
+
+	String getFormatada(){
+		return dia + "/" + int mes + "/" + int ano;
+	}
+}
+
+class Funcionario{
+	String nome;
+	String RG;
+	String departamento;
+	String funcao;
+	double salario;
+	Data admissao;
+
+	void recebeAumento(double porcentagemAumento) {
+		this.salario = this.salario * (porcentagemAumento / 100) + this.salario;
+	}
+	double calculaGanhoAnual() {
+		return this.salario * 12;
+	}
+	void mostra(){
+		System.out.println("Nome " + this.nome);
+		System.out.println("RG "+ this.RG);
+		System.out.println("Departamento " + this.departamento);
+		System.out.println("Função " + this.funcao);
+		System.out.println("Salário R$ " + this.salario);
+		System.out.println("Data de Admissão " + this.admissao.getFormatada());
+
+		this.recebeAumento(30);	
+		
+		System.out.println("Salário Anual R$ " + this.calculaGanhoAnual());
+		System.out.println("Salário após aumento R$ " + this.salario);
+		}
+}
+
+public class ExercicioFuncionario{
+	public static void main(String[]args){
+		Funcionario funcionarioUm;
+		funcionarioUm = new Funcionario();
+
+		funcionarioUm.nome = "Mario Andrade da Silva Junior";
+		funcionarioUm.RG = "99.999.999-9";
+		funcionarioUm.departamento = "TI";
+		funcionarioUm.funcao = "Desenvolvedor Junior";
+		funcionarioUm.salario = 2000.0;
+		funcionarioUm.admissao = new Data();
+		funcionarioUm.admissao.preencheData(17, 05, 2016);
+
+		funcionarioUm.mostra();	
+
+		Funcionario funcionarioDois = new Funcionario();
+
+		funcionarioDois.nome = 	"Danilo";
+		funcionarioDois.salario = 100;
+
+		Funcionario funcionarioTres = funcionarioDois;
+
+		if(funcionarioDois == funcionarioTres) {
+			System.out.println("Iguais");
+		} else {
+			System.out.println("Diferentes");
+		}
+	}
+}
+
+

@@ -1,0 +1,68 @@
+<canvas id = "tela" width = "600" height = "400"> </canvas>
+
+<script>
+
+var tela = document.getElementById("tela");
+
+var c = tela.getContext("2d");
+
+var raio = 40;
+
+var cor = function(cor) {
+	c.fillStyle = cor;
+};
+
+var circulo = function(x, y, raio, cor) {
+	c.fillStyle = cor;
+	c.beginPath();
+	c.arc(x, y, raio, 0, 2 * Math.PI);
+	c.fill();
+};
+	
+
+
+var desenhaAlvo = function(x, y){
+	cor("white");
+	circulo(x, y, raio);
+	cor("red");
+	circulo(x, y, raio - 10);
+	cor("white");
+	circulo(x, y, raio - 20);
+	cor("red");
+	circulo(x, y, raio - 30);
+};
+
+
+var limpa = function() {
+	c.clearRect(0, 0, 600, 400);
+};
+
+
+var alvoX;
+var alvoY;
+
+var sorteia = function(max) {
+	return Math.floor((Math.random() * max));
+};
+
+var desenha = function() {
+	limpa();
+	alvoX = sorteia(600);
+	alvoY = sorteia(400);
+	desenhaAlvo(alvoX, alvoY);
+};
+
+setInterval(desenha, 3000);
+
+tela.onclick = function(evento) {
+	var x = evento.pageX - tela.offsetLeft;
+	var y = evento.pageY - tela.offsetTop;
+
+	if((x > alvoX - raio) && (x < alvoX + raio) && (y > alvoY - raio) && (y < alvoY + raio)) {
+	alert("Acertou, mandou bem!");}
+};
+
+console.log(alvoX, alvoY);
+
+
+</script>

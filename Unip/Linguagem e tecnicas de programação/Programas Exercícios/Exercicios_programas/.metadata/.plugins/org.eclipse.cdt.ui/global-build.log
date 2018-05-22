@@ -1,0 +1,209 @@
+20:57:08 **** Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../calc.c
+Invoking: GCC C Compiler
+../calc.c:11:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"calc.d" -MT"calc.o" -o "calc.o" "../calc.c"
+ void main() {
+      ^
+Finished building: ../calc.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o   
+Finished building target: Exercicios
+ 
+20:57:12 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+20:57:34 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+20:59:12 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+20:59:34 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+21:00:01 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+21:00:03 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:58 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../calc.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"calc.d" -MT"calc.o" -o "calc.o" "../calc.c"
+../calc.c:11:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main() {
+      ^
+Finished building: ../calc.c
+ 
+Building file: ../enquete_enquanto_faca_while.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"enquete_enquanto_faca_while.d" -MT"enquete_enquanto_faca_while.o" -o "enquete_enquanto_faca_while.o" "../enquete_enquanto_faca_while.c"
+Finished building: ../enquete_enquanto_faca_while.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'Exercicios' failed
+make: *** [Exercicios] Error 1
+22:43:02 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../enquete_enquanto_faca_while.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"enquete_enquanto_faca_while.d" -MT"enquete_enquanto_faca_while.o" -o "enquete_enquanto_faca_while.o" "../enquete_enquanto_faca_while.c"
+Finished building: ../enquete_enquanto_faca_while.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+make: *** [Exercicios] Error 1
+makefile:29: recipe for target 'Exercicios' failed
+22:43:16 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../enquete_enquanto_faca_while.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"enquete_enquanto_faca_while.d" -MT"enquete_enquanto_faca_while.o" -o "enquete_enquanto_faca_while.o" "../enquete_enquanto_faca_while.c"
+Finished building: ../enquete_enquanto_faca_while.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'Exercicios' failed
+make: *** [Exercicios] Error 1
+22:44:12 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../enquete_enquanto_faca_while.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"enquete_enquanto_faca_while.d" -MT"enquete_enquanto_faca_while.o" -o "enquete_enquanto_faca_while.o" "../enquete_enquanto_faca_while.c"
+../enquete_enquanto_faca_while.c:11:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main()
+      ^
+Finished building: ../enquete_enquanto_faca_while.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'Exercicios' failed
+make: *** [Exercicios] Error 1
+22:44:30 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'Exercicios' failed
+make: *** [Exercicios] Error 1
+22:46:11 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../enquete_enquanto_faca_while.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"enquete_enquanto_faca_while.d" -MT"enquete_enquanto_faca_while.o" -o "enquete_enquanto_faca_while.o" "../enquete_enquanto_faca_while.c"
+Finished building: ../enquete_enquanto_faca_while.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+makefile:29: recipe for target 'Exercicios' failed
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+make: *** [Exercicios] Error 1
+22:47:39 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../enquete.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"enquete.d" -MT"enquete.o" -o "enquete.o" "../enquete.c"
+Finished building: ../enquete.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete.o ./enquete_enquanto_faca_while.o   
+./enquete.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete.c:4: múltipla definição de `main'
+makefile:29: recipe for target 'Exercicios' failed
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+./enquete_enquanto_faca_while.o: na função `main':
+/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../enquete_enquanto_faca_while.c:12: múltipla definição de `main'
+./calc.o:/home/mario/Dropbox/TADS/Semestre 2/Bimestre 4/Linguagem e Técnicas de Programação/Programas Exercícios/Exercicios_programas/Exercicios/Debug/../calc.c:11: definido primeiramente aqui
+collect2: error: ld returned 1 exit status
+make: *** [Exercicios] Error 1
+22:49:53 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../calc.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"calc.d" -MT"calc.o" -o "calc.o" "../calc.c"
+../calc.c:16:9: error: expected declaration specifiers or ‘...’ before string constant
+  printf("Digite: Numero Operação Numero \n");
+         ^
+../calc.c:17:8: error: expected declaration specifiers or ‘...’ before string constant
+  scanf("%f %c %f", &num1, &op, &num2);
+        ^
+../calc.c:17:20: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  scanf("%f %c %f", &num1, &op, &num2);
+                    ^
+../calc.c:17:27: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  scanf("%f %c %f", &num1, &op, &num2);
+                           ^
+../calc.c:17:32: error: expected declaration specifiers or ‘...’ before ‘&’ token
+  scanf("%f %c %f", &num1, &op, &num2);
+                                ^
+../calc.c:19:2: error: expected identifier or ‘(’ before ‘switch’
+  switch(op){
+  ^
+../calc.c:45:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+subdir.mk:21: recipe for target 'calc.o' failed
+make: *** [calc.o] Error 1
+22:50:36 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+Building file: ../calc.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"calc.d" -MT"calc.o" -o "calc.o" "../calc.c"
+Finished building: ../calc.c
+ 
+Building target: Exercicios
+Invoking: GCC C Linker
+gcc  -o "Exercicios"  ./calc.o ./enquete_enquanto_faca_while.o   
+Finished building target: Exercicios
+ 
+22:51:21 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:35 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+22:51:58 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+22:52:12 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.
+22:52:18 **** Incremental Build of configuration Debug for project Exercicios ****
+make all 
+make: Nothing to be done for 'all'.

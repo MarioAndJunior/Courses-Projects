@@ -1,0 +1,17 @@
+<meta charset = "UTF-8">
+
+<script>
+function mostra(frase) {
+    document.write(frase + "<br/>");
+}
+
+var anoComoTexto = prompt("Informe o ano inicial");
+var AnoCopa = parseInt(anoComoTexto);
+var limite = prompt("Qual o ano limite?");
+
+while(AnoCopa <= limite) {
+    mostra(AnoCopa + " é ano de copa!");
+    AnoCopa = 4 + AnoCopa;
+}
+mostra("Ufa! Esses foram os anos de copa até " + limite);
+</script>

@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<script>
+
+var pulaLinha = function() {
+	document.write("<hr>");
+};
+
+// esta função joga a frase e pula uma linha
+var mostra = function(frase) {
+	document.write(frase);
+	pulaLinha();
+};
+
+var vitorias = parseInt(prompt("Quantos jogos o CDC Futebol Clube venceu?"));
+
+var empates = parseInt(prompt("Quantos jogos o CDC Futebol Clube empatou?"));
+
+var calculaPontos = function(vitorias, empates) {
+                return (vitorias * 3) + empates; 
+            };
+var resultado = calculaPontos(vitorias, empates);
+
+mostra("Nosso time tem " + resultado + " pontos!");
+
+if(resultado > 28) {
+	mostra("Nosso time está MELHOR que o Livros Velhos!");
+}
+
+if(resultado < 28) {
+    mostra("Nosso time está indo PIOR que o Livros Velhos!");
+}
+
+if(resultado == 28) {
+    mostra("Nosso time está EMPATADO com o Livros Velhos!");
+}
+</script>
+

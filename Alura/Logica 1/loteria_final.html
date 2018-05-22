@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+
+<script>
+
+var pulaLinha = function () {
+	document.write("<hr>");
+};
+
+var mostra = function(frase) {
+	document.write(frase);
+	pulaLinha();
+};
+
+var compara = function(apostados, sorteados) {
+	var acertos = 0;
+		for(i = 0; i < 6; i++) {
+			for(j = 0; j < 6; j++) {
+			if (apostados[i] === sorteados[j]) {acertos++;}
+}
+}  
+	return acertos;
+}
+
+alert("Hora de jogar na mega! São seis dezenas do número 1 ao 60");
+var numerosApostados = [];
+
+for(i = 0; i < 6; i++) {
+	numerosApostados[i] = parseInt(prompt("Me fale a sua dezena n " + (i + 1)));
+
+}
+
+alert("Muito bem, agora vou sortear as dezenas.");
+
+var numerosSorteados = [];
+
+for(i = 0; i < 6; i++) {
+	numerosSorteados[i] = Math.round(Math.random() * 60);
+}
+
+var acertos = compara(numerosApostados, numerosSorteados);
+
+mostra("Você apostou as seguintes dezenas " + numerosApostados);
+
+mostra("As seguintes dezenas foram sorteadas: " + numerosSorteados);
+
+mostra("Sua quantidade de acertos foi: " + acertos + " dezena(s)");
+  
+
+console.log(numerosSorteados);
+
+
+</script>

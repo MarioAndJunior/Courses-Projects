@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+
+<script>
+var pulaLinha = function() {
+	document.write("<br>");
+};
+
+// esta função joga a frase e pula uma linha
+var mostra = function(frase) {
+	document.write(frase);
+	pulaLinha();
+};
+
+var peso = 92;
+
+var altura = 1.92;
+
+var imc = peso / (altura * altura);
+mostra("meu IMC é: " + imc);
+
+</script>
+
+<strong><br></strong>
+
+<script>
+
+var calculaIMC = function(altura, peso) {
+    var imc = peso / (altura * altura);
+    mostra("Meu imc é " + calculaIMC(altura, peso));
+
+   // calculando a diferenca
+    var diferenca = 35 - imc;
+    alert("Você está " + diferenca + " da obesidade severa");
+};
+
+var pesoDoPrimo = 83;
+var alturaDoPrimo = 1.76;
+calculaIMC(alturaDoPrimo, pesoDoPrimo);
+
+</script>
+
+<strong><br></strong>
+
+<script>
+var nome = prompt("Bom dia. Qual é o seu nome?");
+document.write("Bem vindo, " + nome);
+
+var idade = prompt(nome + ", quantos anos você tem?");
+
+var dias = idade * 365;
+document.write(nome + " você já viveu" + dias + " dias.");
+
+var batimentos = dias * 24 * 80 * 60;
+document.write("Seu coração já bateu " + batimentos + " vezes. Haja coração!");
+
+</script>
+
+
