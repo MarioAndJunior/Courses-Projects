@@ -1,0 +1,19 @@
+Design Patterns
+
+    Creational              Strutuctural            Behaviorial
+        Factories               Adapter                 Chain of Reponsibility
+        Prototype               Bridge                  Command
+        Singleton               Composite               Interpreter
+                                Decorator               Iterator
+                                Façade                  Mediator
+                                Flyweight               Memento
+                                Proxy                   Observer   
+                                                        State
+                                                        Strategy
+                                                        Template Method
+                                                        Visitor
+
+
+SOLID Design Principles (Uncle Bob)
+
+    

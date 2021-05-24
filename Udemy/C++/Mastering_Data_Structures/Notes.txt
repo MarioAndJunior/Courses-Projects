@@ -1,0 +1,16 @@
+Sessao 4 Aula 19 - Memory
+
+    Each segment of memory is 64 Kb large
+    Contains adress that comes from 0 to 65535 bytes, 65536 in total (64 * 1024)
+
+    The main memory is divided in three sections
+        ----------------------------------------
+        Stack (organized)
+        ----------------------------------------
+        Heap (unorganized)
+        ----------------------------------------
+        Code section
+        ----------------------------------------
+
+    Heap should be used as resource, use while necessary then free it.
+    Programs cannot access heap memory directly, only by using pointers.
