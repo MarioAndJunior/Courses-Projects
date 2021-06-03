@@ -119,6 +119,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bind", "bind\bind.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unique_pointers", "unique_pointers\unique_pointers.vcxproj", "{F4FA9DDF-0520-4063-A00C-864A551E7844}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shared_pointers", "shared_pointers\shared_pointers.vcxproj", "{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -709,6 +711,16 @@ Global
 		{F4FA9DDF-0520-4063-A00C-864A551E7844}.Release|x64.Build.0 = Release|x64
 		{F4FA9DDF-0520-4063-A00C-864A551E7844}.Release|x86.ActiveCfg = Release|Win32
 		{F4FA9DDF-0520-4063-A00C-864A551E7844}.Release|x86.Build.0 = Release|Win32
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Debug|x64.ActiveCfg = Debug|x64
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Debug|x64.Build.0 = Debug|x64
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Debug|x86.ActiveCfg = Debug|Win32
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Debug|x86.Build.0 = Debug|Win32
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Release|x64.ActiveCfg = Release|x64
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Release|x64.Build.0 = Release|x64
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Release|x86.ActiveCfg = Release|Win32
+		{3DDDC3F4-FCD7-44DC-8654-CCB8DD12A4BB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
